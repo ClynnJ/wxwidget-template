@@ -1,0 +1,70 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 20,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "core",
+            "hidden": true,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
+            }
+        },
+        {
+            "name": "debug",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE":"Debug"
+            }
+        },
+        {
+            "name": "release",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE":"Release"
+            }
+        },
+        {
+            "name": "gcc",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_CXX_COMPILER": "D:/msys64/mingw64/bin/g++.exe"
+            }
+        },
+        {
+            "name": "debug-gcc",
+            "displayName": "Debug (G++)",
+            "inherits":[
+                "core",
+                "debug",
+                "gcc"
+            ]
+        },
+        {
+            "name": "release-gcc",
+            "displayName": "Release (G++)",
+            "inherits":[
+                "core",
+                "release",
+                "gcc"
+            ]
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "debug-build-gcc",
+            "displayName": "Debug Build (G++)",
+            "configurePreset": "debug-gcc"
+        },
+        {
+            "name": "release-build-gcc",
+            "displayName": "Release Build (G++)",
+            "configurePreset": "release-gcc"
+        }
+    ]
+}

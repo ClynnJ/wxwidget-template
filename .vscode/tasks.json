@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build debug",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/out/build/debug-gcc",
+                "--config",
+                "Debug",
+                "--",
+                "-j",
+                "4"  // Especifica el número de núcleos para la compilación paralela, ajusta según tu CPU
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compiling debug configuration"
+        },
+        {
+            "label": "build release",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/out/build/release-gcc",
+                "--config",
+                "Release",
+                "--",
+                "-j",
+                "4"  // Especifica el número de núcleos para la compilación paralela, ajusta según tu CPU
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compiling release configuration"
+        }
+    ]
+}
