@@ -1,0 +1,13 @@
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/CMakeFiles/edit_cache.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/CMakeFiles/rebuild_cache.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/CMakeFiles/list_install_components.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/CMakeFiles/install.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/CMakeFiles/install/local.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/CMakeFiles/install/strip.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/src/CMakeFiles/wxwidget-template.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/src/CMakeFiles/edit_cache.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/src/CMakeFiles/rebuild_cache.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/src/CMakeFiles/list_install_components.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/src/CMakeFiles/install.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/src/CMakeFiles/install/local.dir
+D:/Programming/CPlusPlus/wxwidget-template/out/build/debug-gcc/src/CMakeFiles/install/strip.dir

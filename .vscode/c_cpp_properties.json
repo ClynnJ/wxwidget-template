@@ -4,9 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:/msys64/mingw64/include/wx-3.2",
-                "D:/msys64/mingw64/include",
-                "D:/msys64/mingw64/lib/wx/include/msw-unicode-static-3.2"
+                "D:/libraries/wxWidgets/include",
+                "D:/msys64/mingw64/include"
             ],
             "defines": [
                 "_DEBUG",

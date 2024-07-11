@@ -1,10 +1,9 @@
 {
     "cmake.configureSettings": {
         "CMAKE_CXX_COMPILER": "D:/msys64/mingw64/bin/g++.exe",
-        "wxWidgets_ROOT_DIR": "D:/msys64/mingw64",
-        "wxWidgets_LIB_DIR": "D:/msys64/mingw64/lib",
-        "wxWidgets_INCLUDE_DIRS": "D:/msys64/mingw64/include/wx-3.2;D:/msys64/mingw64/include;D:/msys64/mingw64/lib/wx/include/msw-unicode-static-3.2",
-        "wxWidgets_CONFIGURATION": "msw-unicode-static-3.2"
+        "wxWidgets_ROOT_DIR": "D:/libraries/wxWidgets",
+        "wxWidgets_LIB_DIR": "D:/libraries/wxWidgets/lib/gcc_x64_lib",
+        "wxWidgets_INCLUDE_DIRS": "D:/libraries/wxWidgets/include/",
     },
     "cmake.buildDirectory": "${workspaceFolder}/out/build/gcc",
     "cmake.generator": "Ninja",

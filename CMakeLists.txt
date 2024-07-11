@@ -18,17 +18,15 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-set(wxWidgets_ROOT_DIR "D:/msys64/mingw64")
-set(wxWidgets_LIB_DIR "D:/msys64/mingw64/lib")
-set(wxWidgets_LIBRARIES "D:/msys64/mingw64/lib/libwx_mswu-3.2.a")
-set(wxWidgets_INCLUDE_DIRS "D:/msys64/mingw64/include/wx-3.2;D:/msys64/mingw64/include;D:/msys64/mingw64/lib/wx/include/msw-unicode-static-3.2")
-set(wxWidgets_CONFIGURATION "msw-unicode-static-3.2")
+set(wxWidgets_ROOT_DIR "D:/libraries/wxWidgets")
+set(wxWidgets_LIB_DIR "D:/libraries/wxWidgets/lib/gcc_x64_lib")
+set(wxWidgets_INCLUDE_DIRS "D:/libraries/wxWidgets/include/")
 
 # Añadir directorios de enlace e inclusión
 include_directories(${wxWidgets_INCLUDE_DIRS})
 link_directories(${wxWidgets_LIB_DIR})
 
-find_package(wxWidgets REQUIRED COMPONENTS monolithic)
+find_package(wxWidgets REQUIRED COMPONENTS core base)
 #find_package(wxWidgets REQUIRED)
 
 if (wxWidgets_FOUND)
